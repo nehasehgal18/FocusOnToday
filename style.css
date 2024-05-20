@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(72, 163, 0, 0.07);
+}
+#heading{
+    color:rgba(72, 163, 0, 1);
+    text-align: center;
+    font-weight: 900;
+    font-family: sans-serif;
+    /* font-size: 50px; */
+    
+    
+}
+span{
+    color: rgba(97, 72, 28, 1); 
+}
+
+.sun{
+    width: 60px;
+    height: 34px;
+    vertical-align: bottom;
+}
+#subheading span{
+    font-size: 32px;
+    color: black;
+}
+
+.container {
+    background-color: rgba(251, 251, 251, 1);
+    width: 660px;
+    height: auto;
+   margin: auto;
+   padding: 15px 0px 0px 25px;
+  
+}
+.goalprogress{
+    color:rgba(133, 133, 133, 1);
+    font-weight: 400;
+    font-size: 18px;
+}
+.progressbar{
+    background-color: rgba(72, 163, 0, 0.1);
+    width: 90%;
+    height: 25px;
+    border-radius: 15px;
+
+}
+.progressvalue{
+    background-color: rgba(72, 163, 0, 1);
+    width: 0;
+    height: 100%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+
+}
+.span {
+    padding-left: 10px;
+    color: white;
+    min-width: max-content;
+   
+}
+.warning{
+    color: rgba(255, 81, 81, 1);
+    display: none;
+    
+}
+
+.optionCintainer {
+    width: 90%;
+    height: 82px;
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 15px 0px;
+    
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    /* width: 364px;
+    height: 28px; */
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    flex-grow: 1;
+    /* background-color: aqua; */
+    /* align-self: stretch; */
+   
+}
+input::placeholder{
+    color: rgba(217, 217, 217, 1);
+}
+.bottomheading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+footer{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(133, 133, 133, 1);
+    margin-top: 50px;
+}
+.completed .circle {
+    background-color: #48a300;
+    border-color: #48a300 ;
+}
+.tick {
+    display: none;
+}
+.completed .tick {
+    display: block;
+}
+
+.completed input {
+    color: #48a300;
+    text-decoration-line: line-through;
+}
+
+.showError .warning {
+    display: block;
+}
